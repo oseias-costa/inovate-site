@@ -19,10 +19,15 @@ export const GlobalStyle = createGlobalStyle`
   scroll-behavior: smooth;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-family: var(--font-geometos);
 }
 
+p {
+  font-family: var(--font-roboto);
+  color: var(--color-gray);
+  font-weight: 300;
+}
 
 `
 

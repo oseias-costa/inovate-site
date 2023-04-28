@@ -1,4 +1,6 @@
 import Licensing from "../../../public/images/licensing.webp";
+import Advisory from "../../../public/images/advisory.webp";
+import Trainings from "../../../public/images/trainings.webp";
 
 export const data = [
   {
@@ -8,12 +10,12 @@ export const data = [
   },
   {
     id: 2,
-    text: "licenciamento ambiental",
-    image: Licensing,
+    text: "Acessoria e consultoria",
+    image: Advisory,
   },
   {
-    id: 2,
-    text: "licenciamento ambiental",
-    image: Licensing,
+    id: 3,
+    text: "TREINAMENTOS E AUDITORIAS",
+    image: Trainings,
   },
 ];
