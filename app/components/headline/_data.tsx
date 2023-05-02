@@ -10,7 +10,7 @@ export const data = [
   },
   {
     id: 2,
-    text: "Acessoria e consultoria",
+    text: "Assessoria e consultoria",
     image: Advisory,
   },
   {

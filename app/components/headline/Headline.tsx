@@ -33,9 +33,9 @@ export default function Headline() {
         <Services>
           {services}
         </Services>
-        <CustomButton href="#">Entre em Contato</CustomButton>
+        <CustomButton>Entre em Contato</CustomButton>
       </Description>
-      <Image 
+      <ImageRight 
         src={StartImg} 
         alt='Inovate Ambiental - Soluções em consultoria e Assessoria ambiental' 
         width={400}
@@ -53,6 +53,10 @@ const Container = styled.section`
 
 const Description = styled.div`
   padding-right: 48px;
+
+  @media(max-width: 740px) {
+    padding-right: 0px;
+  }
 `;
 
 const Services = styled.div`
@@ -60,6 +64,10 @@ const Services = styled.div`
   padding-top: 60px;
   padding-bottom: 40px;
   padding-bottom: 40px;
+
+  @media(max-width: 740px){ 
+    justify-content: center;
+  }
 `;
 
 const Service = styled.div`
@@ -70,6 +78,18 @@ const Service = styled.div`
     width: 126px;
     padding-top: 12px;
     color: var(--color-gray);
+
+    @media(max-width: 740px) {
+      font-size: 10px;
+      width: 100px;
+      text-align: center;
+    }
+
+  }
+  @media(max-width: 740px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 `;
 
@@ -93,6 +113,13 @@ const Title = styled.div`
 const Text = styled.p`
   font-size: 13pt;
   max-width: 400px;
+
+  @media(max-width: 740px) {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+  }
 `;
 
 const ImgLogo = styled(Image)`
@@ -100,9 +127,28 @@ const ImgLogo = styled(Image)`
   height: 107.42px;
   position: relative;
   right: 22px;
+
+  @media(max-width: 740px) {
+    right: 0;
+  }
 `;
 
 const Icon = styled(Image)`
   width: 46px;
   height: 46px;
+  
+  @media(max-width: 740px) {
+    width: 36px;
+    height: 36px;
+  }
 `;
+
+const ImageRight = styled(Image)`
+  width: 400px;
+  height: auto;
+
+  @media (max-width: 740px) {
+    display: none;
+  }
+`
+  

@@ -1,11 +1,11 @@
 import reasonsImage from "../../../public/images/five-reasons.webp";
 import reasonsIcon from "../../../public/images/check-reasons.webp";
 
-export const reasonsData = [
+export const reasonsData = {
     title: '5 motivos para contratar a inovate',
     image: reasonsImage,
     icon: reasonsIcon,
-    constent: [
+    content: [
         {
             id: 1,
             subtitle: 'Foco nas necessidades do cliente',
@@ -32,4 +32,4 @@ export const reasonsData = [
             text: 'Oferecemos soluções acessíveis que economizam tempo e reduzem o estresse.'
         }
     ]
-]
+}

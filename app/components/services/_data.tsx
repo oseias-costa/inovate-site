@@ -20,7 +20,7 @@ export const servicesData = {
     {
       id: 3,
       text: "TREINAMENTOS E AUDITORIAS",
-      icon: Licensing,
+      icon: Trainings,
     },
     {
       id: 4,

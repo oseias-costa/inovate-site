@@ -2,15 +2,33 @@
 import React from "react";
 import styled from "styled-components";
 import { whoAreData } from "./_data";
-import Image from "next/image";
 
 export default function WhoAre() {
   return (
-    <Container>
+    <Container id='quemSomos'>
       <h2>{whoAreData.title}</h2>
-      <p>{whoAreData.text}</p>
+      <div>
+        <p>{whoAreData.text}</p>
+      </div>
     </Container>
   );
 }
 
-const Container = styled.section``;
+const Container = styled.section`
+  padding-top: 83px;
+  padding-bottom: 83px;
+  text-align: center;
+  
+  h2 {
+    color: var(--color-blue)
+  }
+  
+  p {
+    padding-top: 25px;
+    margin: 0 auto;
+    max-width: 740px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+`;
+

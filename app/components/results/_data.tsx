@@ -1,4 +1,4 @@
-const resultsData = [
+export const resultsData = [
   {
     id: 1,
     number: "+ 200",

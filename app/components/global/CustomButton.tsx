@@ -1,9 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
+import { globalData } from "./_data";
 
-export default function CustomButton({children, href}: {children: string, href: string}) {
+export default function CustomButton({children}: {children: string}) {
   return (
-    <Button href={href}>{children}</Button>
+    <Button href={globalData.whatsapp}>{children}</Button>
   )
 }
 
@@ -22,5 +23,12 @@ const Button = styled.a`
     &:hover {
       background: transparent;
       color: var(--color-blue);
+    }
+
+    @media(max-width: 740px) {
+      display: block;
+      width: 90%;
+      text-align: center;
+      margin: 0 auto;
     }
 `

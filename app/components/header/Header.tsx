@@ -6,7 +6,7 @@ import Logo from '../../../public/images/inovate-logo.webp'
 
 export default function Header() {
   return (
-    <HeaderContainer>
+    <HeaderContainer id='inicio'>
         <Img src={Logo} alt='Logo Inovate Ambiental' />
         <Menu />
     </HeaderContainer>
@@ -23,5 +23,5 @@ const HeaderContainer = styled.header`
 
 const Img = styled(Image)`
     width: 200px;
-    height: 104.16px;
+    height: 42px;
 `

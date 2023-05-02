@@ -1,5 +1,5 @@
 import Legal from "../../../public/images/legal.webp";
-import Managements from "../../../public/images/managements.webp";
+import Eficient from "../../../public/images/eficient.webp";
 import Oportunites from "../../../public/images/oportunites.webp";
 
 export const helpCompaniesData = {
@@ -15,7 +15,7 @@ export const helpCompaniesData = {
       id: 2,
       subtitle: "Eficiência operacional",
       text: "Ajudamos a identificar oportunidades para reduzir o consumo de energia e água, minimizar a geração de resíduos e melhorar a eficiência dos processos de produção.",
-      image: Managements,
+      image: Eficient,
     },
     {
       id: 3,

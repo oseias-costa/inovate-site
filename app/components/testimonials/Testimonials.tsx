@@ -9,7 +9,7 @@ export default function Testimonials() {
     return (
       <Block>
         <Icon
-          src={item.icon}
+          src={testimonialsData.icon}
           alt="O que os clintes da Consultoria da Inovate Ambiental dizem!"
         />
         <p>{item.text}</p>
@@ -19,19 +19,44 @@ export default function Testimonials() {
   });
 
   return (
-    <Container>
+    <Container id='depoimentos'>
       <h2>{testimonialsData.title}</h2>
       <Blocks>{testimonialItem}</Blocks>
     </Container>
   );
 }
 
-const Container = styled.section``;
+const Container = styled.section`
+  padding-bottom: 83px;
+
+  h2 {
+    color: var(--color-blue);
+    text-align: center;
+  }
+`;
 
 const Blocks = styled.div`
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 `;
 
-const Block = styled.div``;
+const Block = styled.div`
+  max-width: 400px;
+  margin: 50px;
 
-const Icon = styled(Image)``;
+  h5 {
+    color: var(--color-gray);
+    padding-top: 20px;
+  }
+
+  @media(max-width: 600px){ 
+    margin: 30px;
+  }
+`;
+
+const Icon = styled(Image)`
+  width: 76px;
+  height: 76px;
+`;
+

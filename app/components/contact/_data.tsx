@@ -5,7 +5,7 @@ import LocationIcon from "../../../public/images/location.webp";
 import Maps from "../../../public/images/maps.webp";
 import Waze from "../../../public/images/waze.webp";
 
-const contactData = {
+export const contactData = {
   title: "contato",
   maps: Maps,
   waze: Waze,
@@ -28,7 +28,7 @@ const contactData = {
     {
       id: 4,
       itemContact:
-        "R. Gen. Osório, 1148 - Centro, Passo Fundo - RS, Cep 99010-140",
+        'Rua General Osório, 1148 - Sala 109 - Centro, Passo Fundo - RS Cep 99010-140',
       icon: LocationIcon,
     },
   ],
