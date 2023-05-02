@@ -1,4 +1,5 @@
 "use client";
+import { it } from "node:test";
 import React from "react";
 import styled from "styled-components";
 import { resultsData } from "./_data";
@@ -6,7 +7,7 @@ import { resultsData } from "./_data";
 export default function Results() {
   const resultsItem = resultsData.map((item) => {
     return (
-      <Block>
+      <Block key={item.id}>
         <h3>{item.number}</h3>
         <p>{item.text}</p>
       </Block>

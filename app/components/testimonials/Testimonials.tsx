@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function Testimonials() {
   const testimonialItem = testimonialsData.content.map((item) => {
     return (
-      <Block>
+      <Block key={item.id}>
         <Icon
           src={testimonialsData.icon}
           alt="O que os clintes da Consultoria da Inovate Ambiental dizem!"
