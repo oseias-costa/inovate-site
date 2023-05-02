@@ -49,6 +49,9 @@ const Container = styled.section`
   padding-bottom: 56px;
   display: flex;
   justify-content: center;
+  @media(max-width: 740px){
+    padding-top: 26px;
+  }
 `;
 
 const Description = styled.div`
@@ -107,6 +110,10 @@ const Title = styled.div`
 
   div > h1:nth-child(2) {
     color: var(--color-blue);
+  }
+
+  @media(max-width: 740px) {
+    flex-direction: column;
   }
 `;
 
