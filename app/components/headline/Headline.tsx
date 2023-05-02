@@ -114,6 +114,7 @@ const Title = styled.div`
 
   @media(max-width: 740px) {
     flex-direction: column;
+    text-align: center;
   }
 `;
 
@@ -125,6 +126,7 @@ const Text = styled.p`
     max-width: 100%;
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 20px;
     text-align: center;
   }
 `;
