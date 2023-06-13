@@ -2,6 +2,8 @@ import StyledComponentsRegistry from './lib/registry';
 import localFont from 'next/font/local'
 import { Roboto } from 'next/font/google';
 import { GlobalStyle } from './GlobalStyle';
+import Google from './components/global/Google';
+import Meta from './components/global/Meta';
 
 export const metadata = {
   title: 'Inovate Ambiental',
@@ -35,7 +37,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <GlobalStyle />
+      <Meta />
       <body className={`${geometos.variable} ${roboto.variable}`}>
+        <Google />
         <StyledComponentsRegistry>
           {children}
         </StyledComponentsRegistry>

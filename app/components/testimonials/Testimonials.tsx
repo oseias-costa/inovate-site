@@ -14,6 +14,7 @@ export default function Testimonials() {
         />
         <p>{item.text}</p>
         <h5>{item.client}</h5>
+        <h6>{item.companie}</h6>
       </Block>
     );
   });
@@ -48,6 +49,11 @@ const Block = styled.div`
   h5 {
     color: var(--color-gray);
     padding-top: 20px;
+  }
+
+  h6 {
+    color: #909293;
+    padding-top: 5px;
   }
 
   @media(max-width: 600px){ 
