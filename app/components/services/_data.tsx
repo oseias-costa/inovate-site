@@ -14,7 +14,7 @@ export const servicesData = {
     },
     {
       id: 2,
-      text: "Acessoria e consultoria",
+      text: "Assessoria e consultoria",
       icon: Advisory,
     },
     {
