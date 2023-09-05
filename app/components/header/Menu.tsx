@@ -25,7 +25,7 @@ type LinkMenuProps = {
     link: string
 }
 
-const LinkMenu = ({text, link}: LinkMenuProps) => <Li href={link}>{text}</Li>
+export const LinkMenu = ({text, link}: LinkMenuProps) => <Li href={link}>{text}</Li>
 
 const Li = styled.a`
     transition: 0.2s linear;
