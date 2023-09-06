@@ -29,6 +29,7 @@ export const BlogPageContent = styled.div`
     .datePost {
         position: relative;
         top: 30px;
+        font-family: var(--font-roboto);
     }
 
     @media(max-width: 700px){

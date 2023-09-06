@@ -21,6 +21,7 @@ const ButtonBackBlogA = styled.a`
     align-items: center;
     padding-top: 20px;
     color: var(--color-gray);
+    font-family: var(--font-roboto);
 
     svg {
         margin-right: 10px;

@@ -33,14 +33,14 @@ export default async function Blog(){
     })
 
     return(
-        <div>
+        <>
             <HeaderBlog />
             <BlogPostList>
                 <h1>Blog Inovate Ambiental</h1>
                 {list}
             </BlogPostList>
             <FooterBlog />
-        </div>
+        </>
 
     )
 }

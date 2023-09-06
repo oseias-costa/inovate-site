@@ -6,7 +6,7 @@ import { formatDate } from "@/app/lib/utils";
 import { createClient } from "@/prismicio";
 import { asHTML } from "@prismicio/client";
 import { useParams } from "next/navigation";
-import { BlogPageContainer, BlogPageContent, ImageBlogPage } from "./blogpage.styles";
+import { BlogPageContainer, BlogPageContent, ImageBlogPage } from "../../components/blog/blogpage.styles";
 
 export default async function BlogPage(){
     const { uid } = useParams()
