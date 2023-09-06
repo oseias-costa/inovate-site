@@ -9,7 +9,7 @@ export default function HeaderBlog() {
     <HeaderContainer id='inicio'>
         <Img src={Logo} alt='Logo Inovate Ambiental' />
         <Nav>
-          <LinkMenu link='/' text='Início' key='Inicio'/>
+          <LinkMenu link='/' text='Site' key='Inicio'/>
           <LinkMenu link='/blog' text='Blog' key='blog'/>
         </Nav>
     </HeaderContainer>

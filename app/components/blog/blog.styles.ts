@@ -15,15 +15,20 @@ export const BlogPostList = styled.section`
 `
 
 export const BlogLink = styled.div`
- display: flex;
- margin: 20px;
- width: 700px;
- padding: 15px;
- border-radius: 5px;
- 
- &:hover{
-     background-color: #d3d3d3;
- }
+    display: flex;
+    margin: 20px;
+    width: 700px;
+    padding: 15px;
+    border-radius: 5px;
+    
+    &:hover{
+        background-color: #d3d3d3;
+    }
+
+    @media(max-width: 700px){
+        flex-direction: column;
+        width: calc(100% - 40px);
+    }
 `
 
 export const BlogLinkDescription = styled.div`
@@ -32,7 +37,7 @@ export const BlogLinkDescription = styled.div`
     color: var(--color-blue);
 
     .date {
-        padding-top: 20px;
+        padding-top: 15px;
         font-weight: 400;
     }
 
@@ -51,4 +56,9 @@ export const ImgCover = styled(PrismicNextImage)`
     object-fit: cover;
     margin-right: 15px;
     border-radius: 5px;
+
+    @media(max-width: 700px){
+        width: 100%;
+        margin-bottom: 5px;
+    }
 `

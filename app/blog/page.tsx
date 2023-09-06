@@ -1,10 +1,10 @@
 "use client";
 import { createClient } from "@/prismicio";
 import { BlogLink, BlogLinkDescription, BlogPostList, ImgCover } from "../components/blog/blog.styles";
+import FooterBlog from "../components/blog/FooterBlog";
 import HeaderBlog from "../components/blog/HeaderBlog";
 import { formatDate } from "../lib/utils";
 import { List } from "./blog.types";
-
 
 export default async function Blog(){
 
@@ -32,15 +32,14 @@ export default async function Blog(){
         )
     })
 
-
     return(
         <div>
-        <HeaderBlog />
+            <HeaderBlog />
             <BlogPostList>
-            <h1>Blog Inovate Ambiental</h1>
-            {list}
-
+                <h1>Blog Inovate Ambiental</h1>
+                {list}
             </BlogPostList>
+            <FooterBlog />
         </div>
 
     )

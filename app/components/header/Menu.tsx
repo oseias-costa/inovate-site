@@ -6,6 +6,7 @@ export default function Menu() {
         <Nav>
            <LinkMenu link='#servicos' text='Serviços' />
            <LinkMenu link='#quemSomos' text='Quem somos' />
+           <LinkMenu link='/blog' text='Blog' />
            <LinkMenu link='#contato' text='Contato' />
            <LoginButton href='https://inovate.netlify.app/' target='_blank'>Entrar</LoginButton>
         </Nav>

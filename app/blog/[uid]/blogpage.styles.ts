@@ -25,6 +25,17 @@ export const BlogPageContent = styled.div`
             top: 25px;
         }
     }
+
+    .datePost {
+        position: relative;
+        top: 30px;
+    }
+
+    @media(max-width: 700px){
+        max-width: calc(100% - 40px);
+        margin-right: 20px;
+        margin-left: 20px;
+    }
 `
 
 export const ImageBlogPage = styled(PrismicNextImage)`
@@ -33,4 +44,8 @@ export const ImageBlogPage = styled(PrismicNextImage)`
     margin: 0 auto;
     margin-bottom: 40px; 
     margin-top: 20px; 
+
+    @media(max-width: 700px){
+        max-width: calc(100%);
+    }
 `
