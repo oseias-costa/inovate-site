@@ -20,6 +20,7 @@ export const BlogLink = styled.div`
     width: 700px;
     padding: 15px;
     border-radius: 5px;
+    transition: .2s linear;
     
     &:hover{
         background-color: #d3d3d3;

@@ -11,6 +11,7 @@ import Results from "./components/results/Results";
 import Services from "./components/services/Services";
 import Testimonials from "./components/testimonials/Testimonials";
 import WhoAre from "./components/whoAre/WhoAre";
+import { GlobalStyle } from "./GlobalStyle";
 
 const Header = lazy(() => import("./components/header/Header"));
 const Headline = lazy(() => import("./components/headline/Headline"));
@@ -22,6 +23,7 @@ export default function Home(){
 
   return (
     <Container>
+      <GlobalStyle />
       <Suspense fallback={ComponentsLoader}>
         <Whatsapp />
         <Header />

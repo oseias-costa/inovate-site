@@ -36,10 +36,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <GlobalStyle />
       <Meta />
       <body className={`${geometos.variable} ${roboto.variable}`}>
         <Google />
+        <GlobalStyle />
         <StyledComponentsRegistry>
           {children}
         </StyledComponentsRegistry>

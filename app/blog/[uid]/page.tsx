@@ -2,6 +2,7 @@
 import ButtonBackBlog from "@/app/components/blog/ButtonBackBlog";
 import FooterBlog from "@/app/components/blog/FooterBlog";
 import HeaderBlog from "@/app/components/blog/HeaderBlog";
+import { GlobalStyle } from "@/app/GlobalStyle";
 import { formatDate } from "@/app/lib/utils";
 import { createClient } from "@/prismicio";
 import { asHTML } from "@prismicio/client";
@@ -24,6 +25,7 @@ export default async function BlogPage(){
 
     return(
         <BlogPageContainer>
+             <GlobalStyle />
             <HeaderBlog />
             <BlogPageContent>
                 <ButtonBackBlog />

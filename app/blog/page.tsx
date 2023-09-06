@@ -3,6 +3,7 @@ import { createClient } from "@/prismicio";
 import { BlogLink, BlogLinkDescription, BlogPostList, ImgCover } from "../components/blog/blog.styles";
 import FooterBlog from "../components/blog/FooterBlog";
 import HeaderBlog from "../components/blog/HeaderBlog";
+import { GlobalStyle } from "../GlobalStyle";
 import { formatDate } from "../lib/utils";
 import { List } from "./blog.types";
 
@@ -34,6 +35,7 @@ export default async function Blog(){
 
     return(
         <>
+             <GlobalStyle />
             <HeaderBlog />
             <BlogPostList>
                 <h1>Blog Inovate Ambiental</h1>
