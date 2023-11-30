@@ -2,51 +2,65 @@ import { PrismicNextImage } from "@prismicio/next";
 import styled from "styled-components";
 
 export const BlogPageContainer = styled.section`
-    /* display: flex;
+  /* display: flex;
     flex-direction: column;
     align-items: center; */
-`
+`;
 
 export const BlogPageContent = styled.div`
-    max-width: 700px;
-    margin: 0 auto;
+  max-width: 700px;
+  margin: 0 auto;
 
-    h1 {
-        color: var(--color-gray);
-        padding-bottom: 20px;
-        padding-top: 30px;
+  h1 {
+    color: var(--color-gray);
+    padding-bottom: 20px;
+    padding-top: 30px;
+  }
+
+  h2 {
+    color: var(--color-gray);
+    padding-bottom: 20px;
+    padding-top: 30px;
+    font-size: 18px;
+  }
+
+  h3 {
+    color: var(--color-gray);
+    padding-bottom: 20px;
+    padding-top: 30px;
+    font-size: 14px;
+  }
+
+  p {
+    padding-bottom: 10px;
+
+    &:first-child {
+      position: relative;
+      top: 25px;
     }
+  }
 
-    p {
-        padding-bottom: 10px;
+  .datePost {
+    position: relative;
+    top: 30px;
+    font-family: var(--font-roboto);
+  }
 
-        &:first-child{
-            position: relative;
-            top: 25px;
-        }
-    }
-
-    .datePost {
-        position: relative;
-        top: 30px;
-        font-family: var(--font-roboto);
-    }
-
-    @media(max-width: 700px){
-        max-width: calc(100% - 40px);
-        margin-right: 20px;
-        margin-left: 20px;
-    }
-`
+  @media (max-width: 700px) {
+    max-width: calc(100% - 40px);
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+`;
 
 export const ImageBlogPage = styled(PrismicNextImage)`
-    max-width: 700px;
-    height: auto;
-    margin: 0 auto;
-    margin-bottom: 40px; 
-    margin-top: 20px; 
+  max-width: 700px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  margin-top: 20px;
 
-    @media(max-width: 700px){
-        max-width: calc(100%);
-    }
-`
+  @media (max-width: 700px) {
+    max-width: calc(100%);
+  }
+`;
