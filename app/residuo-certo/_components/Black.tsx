@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image"
-import Cover from '@/public/images/cover.png'
+import Cover from '@/public/images/cover.svg'
 import Header from "@/app/components/header/Header"
 import styled from "styled-components";
 import Footer from "@/app/components/footer/Footer";
@@ -11,17 +11,17 @@ export default function Black(){
         <Header />
         <Container>
           <div>
-          <Img src={Cover} alt="Contentor Black" width={560} />
-            <Title>Contentor Black</Title>
+          <Img src={Cover} alt="Contentor Preto" width={560} />
+            <Title>Contentor Preto</Title>
             <Text>
-              No contentor Black você pode colocar madeiras em geral. Esse resíduo 
+              No contentor preto você pode colocar madeiras em geral. Esse resíduo 
               será destinado para aproveitamento energético ou reciclagem. Segregue da maneira correta e
               contribua para um futuro mais sustentável.
             </Text>
             </div>
             <Iframe
                 src="https://www.youtube.com/embed/AnuQWQXkMro?si=LzostUSiEIUCw-S8" 
-                title="Contentor Black - Inovate Ambiental" 
+                title="Contentor Preto - Inovate Ambiental" 
                 frameBorder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"    
             ></Iframe>
