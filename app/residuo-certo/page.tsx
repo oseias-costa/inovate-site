@@ -5,6 +5,7 @@ import Header from "../components/header/Header";
 import Cover from "@/public/images/cover.png";
 import { data } from "./_components/data";
 import Footer from "../components/footer/Footer";
+import IconCollector from "./_components/IconCollector";
 
 export default function ContentorVermelho(){
     const items = data.map((item) => (
@@ -32,33 +33,33 @@ export default function ContentorVermelho(){
 const Item = ({title, url, color, description}:{title: string, url: string, color: string, description: string}) => {
     return(
         <ItemContainer href={url} color={color}>
-            <h2>Contentor {title}</h2>
-            <p>{description}</p>
+            <IconCollector color={color} />
+            <div>
+                <h2>Contentor {title}</h2>
+                <p>{description}</p>
+            </div>
         </ItemContainer>
     )
 }
 
 const ItemContainer = styled.a<{color: string}>`
-    background-color: ${props => props.color};
     width: 560px;
     padding: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
     border-radius: 4px;
+    display: flex;
     transition: .2s linear;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
-    h2 {
-        color: #fff;
-        padding-bottom: 5px;
+    div {
+        padding-left: 10px;
     }
 
-    p {
-        max-width: 105ch;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        color: white;
+    div > h2 {
+        color:  ${props => props.color};
+        padding-bottom: 5px;
+        font-size: 18px;
     }
 
     @media(max-width: 560px){
