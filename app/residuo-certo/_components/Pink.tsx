@@ -20,7 +20,7 @@ export default function Pink() {
           </Text>
         </div>
         <Iframe
-          src="https://www.youtube.com/embed/7zNYr3LQM8U?si=cd8HZXVuOOHaFbm6"
+          src="https://www.youtube.com/embed/wiui6HHaAaU?si=lDP5T-8orRitBFG9"
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

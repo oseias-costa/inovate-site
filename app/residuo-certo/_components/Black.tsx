@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image"
-import Cover from '@/public/images/cover.svg'
+import Cover from '@/public/images/cover.png'
 import Header from "@/app/components/header/Header"
 import styled from "styled-components";
 import Footer from "@/app/components/footer/Footer";
