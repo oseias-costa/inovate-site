@@ -62,7 +62,7 @@ const ItemContainer = styled.a<{color: string}>`
     }
 
     @media(max-width: 560px){
-        width: 100%;
+        width: calc(100% - 20px);
         height: auto;
     }
 
@@ -87,5 +87,7 @@ const Img = styled(Image)`
     @media(max-width: 560px){
         width: 100%;
         height: auto;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 `
